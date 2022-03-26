@@ -59,14 +59,12 @@ Dt = sqrt(4*At/pi)*1e3; %mm
 r =  a*Pc^n; %[mm/s]
 
 % 結果の出力
-disp('***ミッション要求***');
+disp();
 fprintf('目標遠地点: %.2f [m]\n',z);
 fprintf('速度増分⊿V: %.2f [m/s]\n',deltaV);
-disp('***固体モータ仕様***');
 fprintf('スロート径(S.L.最適膨張): %.2f [mm]\n',Dt);
 fprintf('推力係数(S.L.最適膨張): %.2f\n',Cf);
 fprintf('燃焼速度 r: %.2f [mm/s]\n',r);
-disp('***ロケット構造仕様***');
 fprintf('構造重量比λ: %.2f\n',lambda);
 fprintf('ロケット総重量: %.2f [kg]\n',mi);
 fprintf('推進剤重量: %.2f [kg]\n',mp);
